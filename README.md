@@ -1,1 +1,1 @@
-## Flat Finder by Himel
+## Flat Finder
