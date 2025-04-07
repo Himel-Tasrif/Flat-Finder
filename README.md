@@ -40,7 +40,7 @@ sudo git clone https://github.com/Himel-Tasrif/Flat-Finder.git
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/homeverse.git
+git clone https://github.com/Himel-Tasrif/Flat-Finder.git
 ```
 
 ### Contact
