@@ -1,52 +1,23 @@
-<div align="center">
+# Bangalore House Price Prediction
 
+<figure style="text-align: center;">
+  <img src="https://pbs.twimg.com/media/GC2m9J4aoAMTntt?format=jpg&name=small" alt="Machine Learning" width="500" height="250">
+</figure>
+A house price prediction model for Bangalore City! ️ Using features like:
 
-  <br />
-  <br />
-  
-  <img src= "./readme-images/flat images/home_logo.png" />
+1. Area (Square Feet)
+2. Bedroom
+3. Bathroom
+4. Balcony
+5. Location
 
-  <h2 align="center">Homeverse - Real estate website</h2>
+This model aims to help navigate the bustling Bangalore real estate market. 
 
-  Homeverse is fully responsive Real estate website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+## Project Goals
 
-  <a href="https://codewithsadee.github.io/homeverse/"><strong>➥ Live Demo</strong></a>
+This is my first project, and I'm excited to dive into the world of data analytics and machine learning! While this project is beginner-level and a common machine learning exercise, 
+it's an excellent starting point for me to learn Python, explore data analysis techniques, and build a practical machine learning model.
 
-</div>
+## Stay Tuned for Updates!
 
-<br />
-
-### Demo Screeshots
-
-![homeverse Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-![homeverse Mobile Demo](./readme-images/mobile.png "Mobile Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Homeverse** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/Himel-Tasrif/Flat-Finder.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/Himel-Tasrif/Flat-Finder.git
-```
-
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-### License
-
-This project is **free to use** and does not contains any license.
+I'll be working on this project over the coming weeks, and I'll keep this README updated with my progress and findings. Stay tuned!
