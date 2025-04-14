@@ -2,8 +2,8 @@
 
   <br />
   <br />
-  
-  <img src="./server/static/readme-images/project-logo.png" />
+
+  <img src="./server/static/readme-images/flat images/home_logo.png" />
 
   <h2 align="center">Flat inder - Real estate website</h2>
 
