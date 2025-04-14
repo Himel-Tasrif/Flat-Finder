@@ -3,11 +3,11 @@ import util
 import bcrypt
 import json
 import os
+from functools import wraps
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Required for session management
 
-# Path to the JSON file storing user data
 USER_DATA_FILE = "users.json"
 
 # Load user data from the JSON file
@@ -24,12 +24,18 @@ def save_users(users):
 
 # Middleware to protect routes
 def login_required(f):
+    @wraps(f)
     def wrapper(*args, **kwargs):
         if not session.get('logged_in'):
             return redirect(url_for('login'))
         return f(*args, **kwargs)
-    wrapper.__name__ = f.__name__
     return wrapper
+
+# Clear session on app restart (development/debug use)
+@app.before_request
+def enforce_fresh_session():
+    if 'logged_in' not in session and request.endpoint not in ('login', 'register', 'static'):
+        session.clear()
 
 # Registration route
 @app.route('/register', methods=['GET', 'POST'])
@@ -54,7 +60,6 @@ def register():
                 flash("Email already exists.")
                 return render_template('register.html')
 
-        # Hash password
         hashed_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 
         users[email] = {
@@ -65,10 +70,8 @@ def register():
 
         save_users(users)
 
-        # Use a query string to pass success
         return redirect(url_for('register', success='true'))
 
-    # Check if success param is in URL
     success = request.args.get('success')
     return render_template('register.html', success=success)
 
@@ -92,17 +95,17 @@ def login():
         flash("Invalid username or password.")
     return render_template('loginPage.html')
 
+
 # Logout route
 @app.route('/logout')
 def logout():
-    session.pop('logged_in', None)
-    session.pop('username', None)
+    session.clear()
     return redirect(url_for('login'))
 
-# Homepage route (protected)
-@app.route('/', methods=['GET'], endpoint='home')  # Explicit endpoint name
+# Home route
+@app.route('/')
 @login_required
-def render_html():
+def home():
     return render_template('index.html')
 
 # Price prediction route (protected)
