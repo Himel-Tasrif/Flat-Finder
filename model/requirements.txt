@@ -1,4 +1,0 @@
-Flask
-scikit-learn
-numpy
-bcrypt
