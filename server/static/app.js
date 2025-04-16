@@ -1,3 +1,5 @@
+// Tasrif Nur Himel
+
 function getBathValue() {
     var uiBathrooms = document.getElementsByName("uiBathrooms");
     for(var i in uiBathrooms) {
@@ -39,8 +41,8 @@ function getBalcony() {
     var location = document.getElementById("uiLocations");
     var estPrice = document.getElementById("uiEstimatedPrice");
   
-    // var url = "http://127.0.0.1:5000/predict_home_price"; //Use this if you are NOT using nginx which is first 7 tutorials
-    var url = "/predict_home_price"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
+    // var url = "http://127.0.0.1:5000/predict_home_price"; 
+    var url = "/predict_home_price"; 
   
     $.post(url, {
         total_sqft: parseFloat(sqft.value),
@@ -59,7 +61,7 @@ function getBalcony() {
   function onPageLoad() {
     console.log( "document loaded" );
 
-    var url = "/get_location_names"; // Use this if  you are using nginx. i.e tutorial 8 and onwards
+    var url = "/get_location_names"; // Use this if  you are using nginx.
     $.get(url,function(data, status) {
         console.log("got response for get_location_names request");
         if(data) {
