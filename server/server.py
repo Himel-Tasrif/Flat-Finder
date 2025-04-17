@@ -6,7 +6,7 @@ import os
 from functools import wraps
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Required for session management
+app.secret_key = 'your_secret_key' 
 
 USER_DATA_FILE = "users.json"
 
