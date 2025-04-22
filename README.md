@@ -16,7 +16,7 @@
 ### Demo Screeshots
 
 ![homeverse Desktop Demo](./server/static/readme-images/desktop.png "Desktop Demo")
-![homeverse Mobile Demo](./readme-images/mobile.png "Mobile Demo")
+![homeverse Mobile Demo](./server/static/readme-images/mobile.png "Mobile Demo")
 
 ### Prerequisites
 
@@ -31,7 +31,7 @@ To run **Homeverse** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone 
+sudo git clone https://github.com/Himel-Tasrif/Flat-Finder.git
 ```
 
 Windows:
