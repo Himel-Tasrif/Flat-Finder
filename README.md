@@ -44,6 +44,3 @@ git clone https://github.com/Himel-Tasrif/Flat-Finder.git
 
 If you want to contact with me you can reach me at [Mail](himel35-1078@diu.edu.bd) [Linkedin](https://www.linkedin.com/in/tasrifnurhimel/) 
 
-### License
-
-This project is **free to use** and does not contains any license.
