@@ -40,7 +40,7 @@ Windows:
 git clone https://github.com/Himel-Tasrif/Flat-Finder.git
 ```
 
-### Contact
+### Contact with me
 
 If you want to contact with me you can reach me at [Mail](himel35-1078@diu.edu.bd) [Linkedin](https://www.linkedin.com/in/tasrifnurhimel/) 
 
