@@ -28,13 +28,13 @@ Before you begin, ensure you have met the following requirements:
 
 To run **Flat Finder** locally, run this command on your git bash:
 
-Linux and macOS:
+For Linux and macOS:
 
 ```bash
 sudo git clone https://github.com/Himel-Tasrif/Flat-Finder.git
 ```
 
-Windows:
+For Windows:
 
 ```bash
 git clone https://github.com/Himel-Tasrif/Flat-Finder.git
